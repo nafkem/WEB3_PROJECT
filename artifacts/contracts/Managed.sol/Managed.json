@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Managed",
+  "sourceName": "contracts/Managed.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220dc773f3626df1bdb5429f9eab7c717f8c78b791d1c020faceca21fc11e272cf364736f6c63430008110033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220dc773f3626df1bdb5429f9eab7c717f8c78b791d1c020faceca21fc11e272cf364736f6c63430008110033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

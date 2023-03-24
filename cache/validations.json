@@ -1,0 +1,1491 @@
+{
+  "version": "3.4",
+  "log": [
+    {
+      "@openzeppelin/contracts/token/ERC721/ERC721.sol:ERC721": {
+        "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:19",
+        "version": {
+          "withMetadata": "fb89f71e6f84cdd3d37c118634e9cbb5ffb1a36738ba2ab6da5ee85eef6a679e",
+          "withoutMetadata": "c79012a1b8e68c273d95caf7ad8d0d4e75a13baec0f8a22ce9771b164e8b882c",
+          "linkedWithoutMetadata": "c79012a1b8e68c273d95caf7ad8d0d4e75a13baec0f8a22ce9771b164e8b882c"
+        },
+        "inherit": [
+          "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol:IERC721Metadata",
+          "@openzeppelin/contracts/token/ERC721/IERC721.sol:IERC721",
+          "@openzeppelin/contracts/utils/introspection/ERC165.sol:ERC165",
+          "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Address.sol:Address",
+          "@openzeppelin/contracts/utils/Strings.sol:Strings"
+        ],
+        "methods": [
+          "(string,string)",
+          "supportsInterface(bytes4)",
+          "balanceOf(address)",
+          "ownerOf(uint256)",
+          "name()",
+          "symbol()",
+          "tokenURI(uint256)",
+          "approve(address,uint256)",
+          "getApproved(uint256)",
+          "setApprovalForAll(address,bool)",
+          "isApprovedForAll(address,address)",
+          "transferFrom(address,address,uint256)",
+          "safeTransferFrom(address,address,uint256)",
+          "safeTransferFrom(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC721",
+            "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:44"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_name",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_string_storage",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:24"
+            },
+            {
+              "label": "_symbol",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_string_storage",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:27"
+            },
+            {
+              "label": "_owners",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_mapping(t_uint256,t_address)",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:30"
+            },
+            {
+              "label": "_balances",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:33"
+            },
+            {
+              "label": "_tokenApprovals",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_uint256,t_address)",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:36"
+            },
+            {
+              "label": "_operatorApprovals",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:39"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+              "label": "mapping(address => mapping(address => bool))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_address)": {
+              "label": "mapping(uint256 => address)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@openzeppelin/contracts/token/ERC721/IERC721.sol:IERC721": {
+        "src": "@openzeppelin\\contracts\\token\\ERC721\\IERC721.sol:11",
+        "inherit": [
+          "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "balanceOf(address)",
+          "ownerOf(uint256)",
+          "safeTransferFrom(address,address,uint256,bytes)",
+          "safeTransferFrom(address,address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "approve(address,uint256)",
+          "setApprovalForAll(address,bool)",
+          "getApproved(uint256)",
+          "isApprovedForAll(address,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol:IERC721Receiver": {
+        "src": "@openzeppelin\\contracts\\token\\ERC721\\IERC721Receiver.sol:11",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "onERC721Received(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol:ERC721URIStorage": {
+        "src": "@openzeppelin\\contracts\\token\\ERC721\\extensions\\ERC721URIStorage.sol:11",
+        "inherit": [
+          "@openzeppelin/contracts/token/ERC721/ERC721.sol:ERC721",
+          "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol:IERC721Metadata",
+          "@openzeppelin/contracts/token/ERC721/IERC721.sol:IERC721",
+          "@openzeppelin/contracts/utils/introspection/ERC165.sol:ERC165",
+          "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Strings.sol:Strings"
+        ],
+        "methods": [
+          "tokenURI(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_name",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_string_storage",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:24"
+            },
+            {
+              "label": "_symbol",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_string_storage",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:27"
+            },
+            {
+              "label": "_owners",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_mapping(t_uint256,t_address)",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:30"
+            },
+            {
+              "label": "_balances",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:33"
+            },
+            {
+              "label": "_tokenApprovals",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_uint256,t_address)",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:36"
+            },
+            {
+              "label": "_operatorApprovals",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:39"
+            },
+            {
+              "label": "_tokenURIs",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_mapping(t_uint256,t_string_storage)",
+              "contract": "ERC721URIStorage",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\extensions\\ERC721URIStorage.sol:15"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+              "label": "mapping(address => mapping(address => bool))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_address)": {
+              "label": "mapping(uint256 => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_string_storage)": {
+              "label": "mapping(uint256 => string)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol:IERC721Metadata": {
+        "src": "@openzeppelin\\contracts\\token\\ERC721\\extensions\\IERC721Metadata.sol:12",
+        "inherit": [
+          "@openzeppelin/contracts/token/ERC721/IERC721.sol:IERC721",
+          "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "tokenURI(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@openzeppelin/contracts/utils/Address.sol:Address": {
+        "src": "@openzeppelin\\contracts\\utils\\Address.sol:9",
+        "version": {
+          "withMetadata": "c01fa026eba41cbaaa7449f2e391abb1ad5c05c3d433e87f190cd120f13307b0",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin\\contracts\\utils\\Address.sol:185"
+          },
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin\\contracts\\utils\\Address.sol:185"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@openzeppelin/contracts/utils/Context.sol:Context": {
+        "src": "@openzeppelin\\contracts\\utils\\Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@openzeppelin/contracts/utils/Counters.sol:Counters": {
+        "src": "@openzeppelin\\contracts\\utils\\Counters.sol:14",
+        "version": {
+          "withMetadata": "f540c5ecb8ba8ac6cdef0a26f7f84442dcf2ed180f78932be591709682950503",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@openzeppelin/contracts/utils/Strings.sol:Strings": {
+        "src": "@openzeppelin\\contracts\\utils\\Strings.sol:11",
+        "version": {
+          "withMetadata": "c12afa5e73482a0beed3b3897025589568c5560a1eafcc3ef556ea3ebcf855bc",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [
+          "@openzeppelin/contracts/utils/math/Math.sol:Math"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@openzeppelin/contracts/utils/introspection/ERC165.sol:ERC165": {
+        "src": "@openzeppelin\\contracts\\utils\\introspection\\ERC165.sol:22",
+        "inherit": [
+          "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165": {
+        "src": "@openzeppelin\\contracts\\utils\\introspection\\IERC165.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      },
+      "@openzeppelin/contracts/utils/math/Math.sol:Math": {
+        "src": "@openzeppelin\\contracts\\utils\\math\\Math.sol:9",
+        "version": {
+          "withMetadata": "27789be326274200c4d0ca0f809987199e8a5fcd129848ff36bc0f2372f8cd2f",
+          "withoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff",
+          "linkedWithoutMetadata": "08d24783a787f8a51dea0c166bb6f91a4f0865e02d03d749f102d332e6ead0ff"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/Certification.sol:Certification": {
+        "src": "contracts\\Certification.sol:8",
+        "version": {
+          "withMetadata": "7b611bb228059ae9cd3d33c07a09614ac8755bd9029469c0b761036392aa0e96",
+          "withoutMetadata": "53037f0a5ddaa593f0a976d87899a4ce945ec28a774f39c6c426536ca390a6ca",
+          "linkedWithoutMetadata": "53037f0a5ddaa593f0a976d87899a4ce945ec28a774f39c6c426536ca390a6ca"
+        },
+        "inherit": [
+          "contracts/Managed.sol:Managed",
+          "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol:ERC721URIStorage",
+          "@openzeppelin/contracts/token/ERC721/ERC721.sol:ERC721",
+          "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol:IERC721Metadata",
+          "@openzeppelin/contracts/token/ERC721/IERC721.sol:IERC721",
+          "@openzeppelin/contracts/utils/introspection/ERC165.sol:ERC165",
+          "@openzeppelin/contracts/utils/introspection/IERC165.sol:IERC165",
+          "@openzeppelin/contracts/utils/Context.sol:Context"
+        ],
+        "libraries": [
+          "@openzeppelin/contracts/utils/Counters.sol:Counters"
+        ],
+        "methods": [
+          "(string,string,string)",
+          "issueDegrees(address)",
+          "claimDegree()",
+          "revoke(uint256)",
+          "tokenURI(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Certification",
+            "src": "contracts\\Certification.sol:36"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "Owner",
+            "src": "contracts\\Certification.sol:20"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_name",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_string_storage",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:24"
+            },
+            {
+              "label": "_symbol",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_string_storage",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:27"
+            },
+            {
+              "label": "_owners",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_mapping(t_uint256,t_address)",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:30"
+            },
+            {
+              "label": "_balances",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_address,t_uint256)",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:33"
+            },
+            {
+              "label": "_tokenApprovals",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_mapping(t_uint256,t_address)",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:36"
+            },
+            {
+              "label": "_operatorApprovals",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+              "contract": "ERC721",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol:39"
+            },
+            {
+              "label": "_tokenURIs",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_mapping(t_uint256,t_string_storage)",
+              "contract": "ERC721URIStorage",
+              "src": "@openzeppelin\\contracts\\token\\ERC721\\extensions\\ERC721URIStorage.sol:15"
+            },
+            {
+              "label": "_tokenIds",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_struct(Counter)1570_storage",
+              "contract": "Certification",
+              "src": "contracts\\Certification.sol:21"
+            },
+            {
+              "label": "baseURI",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_string_storage",
+              "contract": "Certification",
+              "src": "contracts\\Certification.sol:22"
+            },
+            {
+              "label": "issuedDegrees",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "Certification",
+              "src": "contracts\\Certification.sol:27"
+            },
+            {
+              "label": "personToDegree",
+              "offset": 0,
+              "slot": "10",
+              "type": "t_mapping(t_address,t_string_storage)",
+              "contract": "Certification",
+              "src": "contracts\\Certification.sol:28"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+              "label": "mapping(address => mapping(address => bool))",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_string_storage)": {
+              "label": "mapping(address => string)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_address)": {
+              "label": "mapping(uint256 => address)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_string_storage)": {
+              "label": "mapping(uint256 => string)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_struct(Counter)1570_storage": {
+              "label": "struct Counters.Counter",
+              "members": [
+                {
+                  "label": "_value",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "32"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/CourseModule.sol:CourseModule": {
+        "src": "contracts\\CourseModule.sol:10",
+        "version": {
+          "withMetadata": "9aa0b2dfc198923a3bc137fc52c97372c147c355d22b76d3a11094893615eaf9",
+          "withoutMetadata": "691563bdbd5e1d503cc8658ca19275d8fc85bdc945f10b8830e6dd361418f817",
+          "linkedWithoutMetadata": "691563bdbd5e1d503cc8658ca19275d8fc85bdc945f10b8830e6dd361418f817"
+        },
+        "inherit": [
+          "contracts/Managed.sol:Managed"
+        ],
+        "libraries": [],
+        "methods": [
+          "(string)",
+          "listCourse(string,string,string,uint256)",
+          "purchaseModule()",
+          "createCertificate()",
+          "issueCertificate(address)",
+          "claimCertificate()",
+          "withdraw()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "CourseModule",
+            "src": "contracts\\CourseModule.sol:35"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "instructorsAddress",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address_payable",
+              "contract": "CourseModule",
+              "src": "contracts\\CourseModule.sol:19"
+            },
+            {
+              "label": "module",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_struct(Course)3064_storage)dyn_storage",
+              "contract": "CourseModule",
+              "src": "contracts\\CourseModule.sol:20"
+            },
+            {
+              "label": "certificationArray",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_array(t_contract(Certification)2976)dyn_storage",
+              "contract": "CourseModule",
+              "src": "contracts\\CourseModule.sol:21"
+            },
+            {
+              "label": "certifcationURI",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_string_storage",
+              "contract": "CourseModule",
+              "src": "contracts\\CourseModule.sol:22"
+            },
+            {
+              "label": "subscribers",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_array(t_address)dyn_storage",
+              "contract": "CourseModule",
+              "src": "contracts\\CourseModule.sol:23"
+            },
+            {
+              "label": "courseFee",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_uint256",
+              "contract": "CourseModule",
+              "src": "contracts\\CourseModule.sol:24"
+            },
+            {
+              "label": "purchaseCount",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_uint256",
+              "contract": "CourseModule",
+              "src": "contracts\\CourseModule.sol:25"
+            },
+            {
+              "label": "addressToCourseListed",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_mapping(t_address,t_struct(Course)3064_storage)",
+              "contract": "CourseModule",
+              "src": "contracts\\CourseModule.sol:27"
+            },
+            {
+              "label": "isSubscriber",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "CourseModule",
+              "src": "contracts\\CourseModule.sol:29"
+            },
+            {
+              "label": "isCertificateClaimed",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "CourseModule",
+              "src": "contracts\\CourseModule.sol:30"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_address_payable": {
+              "label": "address payable",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_contract(Certification)2976)dyn_storage": {
+              "label": "contract Certification[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_struct(Course)3064_storage)dyn_storage": {
+              "label": "struct CourseModule.Course[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(Certification)2976": {
+              "label": "contract Certification",
+              "numberOfBytes": "20"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(Course)3064_storage)": {
+              "label": "mapping(address => struct CourseModule.Course)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_struct(Course)3064_storage": {
+              "label": "struct CourseModule.Course",
+              "members": [
+                {
+                  "label": "courseName",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "courseSymbol",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "courseDuration",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "Fee",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "InstructorHash",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "4"
+                }
+              ],
+              "numberOfBytes": "160"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/Lock.sol:Lock": {
+        "src": "contracts\\Lock.sol:7",
+        "version": {
+          "withMetadata": "a047ce72d4dd9c2ccecbac6743edf29aad5ab3def5d8bb48c4884b7bb62ace85",
+          "withoutMetadata": "32d3554bc8a13582db0b28868b0c01929a838351fd373d89fd187b5992f6da5b",
+          "linkedWithoutMetadata": "32d3554bc8a13582db0b28868b0c01929a838351fd373d89fd187b5992f6da5b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "(uint256)",
+          "withdraw()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Lock",
+            "src": "contracts\\Lock.sol:13"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "unlockTime",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Lock",
+              "src": "contracts\\Lock.sol:8"
+            },
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_address_payable",
+              "contract": "Lock",
+              "src": "contracts\\Lock.sol:9"
+            }
+          ],
+          "types": {
+            "t_address_payable": {
+              "label": "address payable",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/Managed.sol:Managed": {
+        "src": "contracts\\Managed.sol:6",
+        "version": {
+          "withMetadata": "fc1e03f9e8f33a9a97b9d5d7c385deb28f048b4724b8ad8b803ce12bd9885f42",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/Registration.sol:Registration": {
+        "src": "contracts\\Registration.sol:11",
+        "version": {
+          "withMetadata": "6608e0798f11bb80ad60566f92cf8649d83a5829eba773c70bd293999f2f79ec",
+          "withoutMetadata": "aa911782bdd425d1d09b52cfe0082099a625ebb79d633e683e45ad914e4c27da",
+          "linkedWithoutMetadata": "aa911782bdd425d1d09b52cfe0082099a625ebb79d633e683e45ad914e4c27da"
+        },
+        "inherit": [
+          "contracts/Managed.sol:Managed"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "addAdmin(address[])",
+          "enrollStudent(string,string,string,string)",
+          "registerInstructor(string,string,string,string,uint256)",
+          "fireInstructor(address)",
+          "verifyInstructors(address[])",
+          "getInstructorCount()",
+          "getVerifiedInstructorCount()",
+          "isInstructorAddressVerified(address)",
+          "withdraw()",
+          "()",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Registration",
+            "src": "contracts\\Registration.sol:26"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "Owner",
+            "src": "contracts\\Registration.sol:34"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "instructorRegistrationFee",
+            "src": "contracts\\Registration.sol:35"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "instructorRegistrationFee",
+            "src": "contracts\\Registration.sol:35"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "admins",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_array(t_address)dyn_storage",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:33"
+            },
+            {
+              "label": "studentCount",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:36"
+            },
+            {
+              "label": "instructorCount",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:37"
+            },
+            {
+              "label": "verifiedInstructorCount",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:38"
+            },
+            {
+              "label": "students",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_array(t_struct(Student)3690_storage)dyn_storage",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:43"
+            },
+            {
+              "label": "instructors",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_array(t_struct(Instructor)3706_storage)dyn_storage",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:44"
+            },
+            {
+              "label": "verifiedInstructors",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_array(t_address)dyn_storage",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:45"
+            },
+            {
+              "label": "isStudent",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:50"
+            },
+            {
+              "label": "isInstructor",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:51"
+            },
+            {
+              "label": "isInstructorVerified",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:52"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_struct(Instructor)3706_storage)dyn_storage": {
+              "label": "struct Registration.Instructor[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_struct(Student)3690_storage)dyn_storage": {
+              "label": "struct Registration.Student[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_enum(VerificationState)3677": {
+              "label": "enum Registration.VerificationState",
+              "members": [
+                "PENDING",
+                "VERIFIED"
+              ],
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_struct(Instructor)3706_storage": {
+              "label": "struct Registration.Instructor",
+              "members": [
+                {
+                  "label": "Firstname",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "Lastname",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "Gender",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "emailAddress",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "experience",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "4"
+                },
+                {
+                  "label": "hash",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "5"
+                },
+                {
+                  "label": "verificationState",
+                  "type": "t_enum(VerificationState)3677",
+                  "offset": 20,
+                  "slot": "5"
+                }
+              ],
+              "numberOfBytes": "192"
+            },
+            "t_struct(Student)3690_storage": {
+              "label": "struct Registration.Student",
+              "members": [
+                {
+                  "label": "firstName",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "lastName",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "Gender",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "emailAddress",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "id",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "4"
+                },
+                {
+                  "label": "hash",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "5"
+                }
+              ],
+              "numberOfBytes": "192"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/Web3Edu.sol:Web3Edu": {
+        "src": "contracts\\Web3Edu.sol:11",
+        "version": {
+          "withMetadata": "4f68f5ae1c24b62c556a9ffee8668935314cf1b9ab60fcd8378b89cbf16e8606",
+          "withoutMetadata": "ba433c2341c86cb7980d78bb78f01d130fe51158fdfc162fe2ab487a4c8cba31",
+          "linkedWithoutMetadata": "ba433c2341c86cb7980d78bb78f01d130fe51158fdfc162fe2ab487a4c8cba31"
+        },
+        "inherit": [
+          "contracts/Registration.sol:Registration",
+          "contracts/Managed.sol:Managed"
+        ],
+        "libraries": [],
+        "methods": [
+          "createNewModule(string,string,uint256,string,string)",
+          "issueCertificate(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "moduleCreationFee",
+            "src": "contracts\\Web3Edu.sol:35"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "moduleCreationFee",
+            "src": "contracts\\Web3Edu.sol:35"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "admins",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_array(t_address)dyn_storage",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:33"
+            },
+            {
+              "label": "studentCount",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_uint256",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:36"
+            },
+            {
+              "label": "instructorCount",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:37"
+            },
+            {
+              "label": "verifiedInstructorCount",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_uint256",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:38"
+            },
+            {
+              "label": "students",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_array(t_struct(Student)3690_storage)dyn_storage",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:43"
+            },
+            {
+              "label": "instructors",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_array(t_struct(Instructor)3706_storage)dyn_storage",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:44"
+            },
+            {
+              "label": "verifiedInstructors",
+              "offset": 0,
+              "slot": "6",
+              "type": "t_array(t_address)dyn_storage",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:45"
+            },
+            {
+              "label": "isStudent",
+              "offset": 0,
+              "slot": "7",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:50"
+            },
+            {
+              "label": "isInstructor",
+              "offset": 0,
+              "slot": "8",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:51"
+            },
+            {
+              "label": "isInstructorVerified",
+              "offset": 0,
+              "slot": "9",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "Registration",
+              "src": "contracts\\Registration.sol:52"
+            },
+            {
+              "label": "moduleToFee",
+              "offset": 0,
+              "slot": "10",
+              "type": "t_mapping(t_contract(CourseModule)3340,t_uint256)",
+              "contract": "Web3Edu",
+              "src": "contracts\\Web3Edu.sol:27"
+            },
+            {
+              "label": "courseModules",
+              "offset": 0,
+              "slot": "11",
+              "type": "t_array(t_contract(CourseModule)3340)dyn_storage",
+              "contract": "Web3Edu",
+              "src": "contracts\\Web3Edu.sol:28"
+            },
+            {
+              "label": "numberOfModulesCreated",
+              "offset": 0,
+              "slot": "12",
+              "type": "t_uint256",
+              "contract": "Web3Edu",
+              "src": "contracts\\Web3Edu.sol:33"
+            },
+            {
+              "label": "numberOfModulesPurchased",
+              "offset": 0,
+              "slot": "13",
+              "type": "t_uint256",
+              "contract": "Web3Edu",
+              "src": "contracts\\Web3Edu.sol:34"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_contract(CourseModule)3340)dyn_storage": {
+              "label": "contract CourseModule[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_struct(Instructor)3706_storage)dyn_storage": {
+              "label": "struct Registration.Instructor[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_struct(Student)3690_storage)dyn_storage": {
+              "label": "struct Registration.Student[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_contract(CourseModule)3340": {
+              "label": "contract CourseModule",
+              "numberOfBytes": "20"
+            },
+            "t_enum(VerificationState)3677": {
+              "label": "enum Registration.VerificationState",
+              "members": [
+                "PENDING",
+                "VERIFIED"
+              ],
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_contract(CourseModule)3340,t_uint256)": {
+              "label": "mapping(contract CourseModule => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_struct(Instructor)3706_storage": {
+              "label": "struct Registration.Instructor",
+              "members": [
+                {
+                  "label": "Firstname",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "Lastname",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "Gender",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "emailAddress",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "experience",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "4"
+                },
+                {
+                  "label": "hash",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "5"
+                },
+                {
+                  "label": "verificationState",
+                  "type": "t_enum(VerificationState)3677",
+                  "offset": 20,
+                  "slot": "5"
+                }
+              ],
+              "numberOfBytes": "192"
+            },
+            "t_struct(Student)3690_storage": {
+              "label": "struct Registration.Student",
+              "members": [
+                {
+                  "label": "firstName",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "lastName",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "Gender",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "emailAddress",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "id",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "4"
+                },
+                {
+                  "label": "hash",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "5"
+                }
+              ],
+              "numberOfBytes": "192"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.17"
+      }
+    }
+  ]
+}
